@@ -15,3 +15,5 @@ sudo adduser --system --no-create-home --disabled-login --group nginx
 
 sudo chown -R nginx:nginx /etc/letsencrypt/live/nginx-proxy-server.ru/
 sudo chmod 755 /etc/letsencrypt/live/nginx-proxy-server.ru/
+
+sudo chown nginx:nginx /etc/letsencrypt/live/nginx-proxy-server.ru/fullchain.pem /etc/letsencrypt/live/nginx-proxy-server.ru/privkey.pem /etc/letsencrypt/live/nginx-proxy-server.ru/chain.pem
