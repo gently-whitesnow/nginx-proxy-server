@@ -5,7 +5,9 @@ services:
     container_name: nginx 
     image: nginx:1.21     
     volumes:              
-      - /etc/nginx/:/etc/nginx/:ro
+      - /etc/nginx/:/etc/nginx/nginx.conf:ro
+      - /etc/letsencrypt/live/nginx-proxy-server.ru/:/etc/nginx/ssl:ro
+    user: nginx:nginx 
     ports: 
       - "80:80"
       - "443:443"
