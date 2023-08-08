@@ -11,3 +11,7 @@ https://open-networks.ru/d/17-lets-encrypt-polucaem-ssltls-sertifikaty-dlya-ngin
 sh ci.bash
 ```
 
+sudo adduser --system --no-create-home --disabled-login --group nginx
+
+sudo chown -R nginx:nginx /etc/letsencrypt/live/nginx-proxy-server.ru/
+sudo chmod 755 /etc/letsencrypt/live/nginx-proxy-server.ru/
