@@ -21,3 +21,5 @@ sudo chown nginx:nginx /etc/letsencrypt/live/nginx-proxy-server.ru/fullchain.pem
 
 openssl x509 -in /etc/letsencrypt/live/nginx-proxy-server.ru/fullchain.pem -text -noout
 openssl rsa -in /etc/letsencrypt/live/nginx-proxy-server.ru/privkey.pem -check
+
+chmod 644 /etc/letsencrypt/live/nginx-proxy-server.ru/privkey.pem
